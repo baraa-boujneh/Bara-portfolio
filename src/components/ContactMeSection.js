@@ -17,7 +17,7 @@ import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
 
-const LandingSection = () => {
+const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
 
@@ -52,7 +52,7 @@ const LandingSection = () => {
   return (
     <FullScreenSection
       isDarkBackground
-      backgroundColor="#512DA8"
+      backgroundColor="#415364"
       py={16}
       spacing={8}
       width="100%"
@@ -73,9 +73,6 @@ const LandingSection = () => {
                   name="firstName"
                   type="text"
                   {...formik.getFieldProps("firstName")}
-
-                  // onChange={formik.handleChange}
-                  // value={formik.values.firstName}
                 />
 
                 {formik.touched.firstName && formik.errors.firstName ? (
@@ -96,7 +93,7 @@ const LandingSection = () => {
                   // value={formik.values.email}
                 />
 
-                {formik.touched.email && formik.errors.email ? (
+                {formik.touched.email && formik.errors.email  ? (
                   <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                 ) : null}
               </FormControl>
@@ -119,8 +116,7 @@ const LandingSection = () => {
                   name="comment"
                   height={250}
                   {...formik.getFieldProps("comment")}
-                  // onChange={formik.handleChange}
-                  // value={formik.values.comment}
+
                 />
                 {formik.touched.comment &&
                 formik.errors.comment &&
@@ -144,4 +140,4 @@ const LandingSection = () => {
   );
 };
 
-export default LandingSection;
+export default ContactMeSection;

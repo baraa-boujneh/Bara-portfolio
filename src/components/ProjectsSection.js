@@ -5,35 +5,35 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Vagabond",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "Building a full stack website for travel agency with innovative ways and goals of traveling.",
+    getImageSrc: () => require("../asset/vagabond.png"),
   },
   {
-    title: "React Infinite Scroll",
+    title: "Craftschoolship",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
+      "Establishing a full secure online payment and accounting system with odoo ERP and cloud technologies such as Docker and Kubernetes.",
+    getImageSrc: () => require("../asset/craftshoolship.png"),
   },
   {
-    title: "Photo Gallery",
+    title: "Littel Lemon",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    getImageSrc: () => require("../images/photo3.jpg"),
+      "Develop the template of littel lemon restaurant for better frontend practice.",
+    getImageSrc: () => require("../asset/littellemon.png"),
   },
   {
-    title: "Event planner",
+    title: "Emergency vehicles detecter",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+      "Building a smart system for recognizing emergency vehicles for reducing time lost in traffic jam using YOLOV5.",
+    getImageSrc: () => require("../asset/ambulance.png"),
   },
 ];
 
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="#14532d"
+      backgroundColor="#769298"
       isDarkBackground
       p={8}
       alignItems="flex-start"
