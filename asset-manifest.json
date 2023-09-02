@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/baraa-portfolio/static/css/main.df6a7eab.css",
+    "main.js": "/baraa-portfolio/static/js/main.540f880e.js",
+    "static/js/111.ad1cef69.chunk.js": "/baraa-portfolio/static/js/111.ad1cef69.chunk.js",
+    "static/media/ambulance.png": "/baraa-portfolio/static/media/ambulance.fc59bbd55912a40f626b.png",
+    "static/media/littellemon.png": "/baraa-portfolio/static/media/littellemon.988382a762580ce2450e.png",
+    "static/media/craftshoolship.png": "/baraa-portfolio/static/media/craftshoolship.1e527015f2284242dc8b.png",
+    "static/media/vagabond.png": "/baraa-portfolio/static/media/vagabond.9abf58a9f61f69a63044.png",
+    "static/media/IMG2.jpg": "/baraa-portfolio/static/media/IMG2.9d75444d6d8a192a7233.jpg",
+    "index.html": "/baraa-portfolio/index.html",
+    "main.df6a7eab.css.map": "/baraa-portfolio/static/css/main.df6a7eab.css.map",
+    "main.540f880e.js.map": "/baraa-portfolio/static/js/main.540f880e.js.map",
+    "111.ad1cef69.chunk.js.map": "/baraa-portfolio/static/js/111.ad1cef69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df6a7eab.css",
+    "static/js/main.540f880e.js"
+  ]
+}
