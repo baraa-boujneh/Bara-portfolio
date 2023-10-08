@@ -16,6 +16,9 @@ import * as Yup from "yup";
 import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
+import {db} from "./firebase";
+import { doc, setDoc } from "firebase/firestore"; 
+
 
 const ContactMeSection = () => {
   const { isLoading, response, submit } = useSubmit();
@@ -38,6 +41,25 @@ const ContactMeSection = () => {
       comment: "",
     },
     onSubmit: (values) => {
+  const customDocumentId = Date.now().toString(); // You can use any custom logic here
+
+// Extract contact data from the 'values' object
+const { firstName, email, type, comment } = values;
+
+// Create an object with the extracted data
+const contactData = {
+  name: firstName,
+  email: email,
+  type: type,
+  comment: comment,
+};
+// Create a reference to a document in the 'contacts' collection with both custom and auto-generated IDs
+const newContactRef = doc(db, 'contacts', customDocumentId);
+setDoc(newContactRef, contactData).then(() => {
+  console.log('Document successfully written!');
+}).catch((error) => {
+  console.error('Error writing document: ', error);
+});
       submit("", values);
     },
     validationSchema: Yup.object({

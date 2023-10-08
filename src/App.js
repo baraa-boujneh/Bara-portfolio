@@ -7,7 +7,9 @@ import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
 
+
 function App() {
+
   return (
     <ChakraProvider>
       <AlertProvider>
@@ -15,7 +17,8 @@ function App() {
           <Header />
           <LandingSection />
           <ProjectsSection />
-          <ContactMeSection />
+
+          <ContactMeSection  />
           <Footer />
           <Alert />
         </main>
